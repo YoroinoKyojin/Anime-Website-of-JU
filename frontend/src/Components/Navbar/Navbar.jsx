@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -30,4 +30,33 @@ const Navbar = () => {
   );
 };
 
+export default Navbar;*/
+
+import React from 'react';
+import './Navbar.css';
+
+const Navbar = ({ scrollToEvents }) => {
+  return (
+    <header className='header'>
+      <a href='/home' className='logo'>Logo</a>
+      <nav className='navbar'>
+        <a href="/home">Home</a>
+        <a href="/merchandise">Merchandise</a>
+        <a href="#events" onClick={scrollToEvents}>Events</a>
+        <a href="/aboutus">About Us</a>
+        <div className="dropdown-container">
+          <button className='hamburger'>☰</button>
+          <div className="dropdown-menu">
+            <a href="/profile">Profile</a>
+            <a href="/recomm">Recommendations</a>
+            <a href="/contacts">Contacts</a>
+            <a href="/commdisc">Community/Discussion</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
 export default Navbar;
+
