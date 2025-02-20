@@ -70,6 +70,13 @@
     background-size:cover;
 }
 
+.homepage-21 {
+    background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/20820.jpg');
+    background-size:cover;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
 .homepage-3 {
     position: relative;
     width: 100%;
@@ -106,3 +113,131 @@
     background-image: url('https://i.pinimg.com/736x/45/15/1d/45151d5625690e4697eced97b3afd0e2.jpg');
 }
 
+
+
+
+.homepage-21 h2 {
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .homepage-21 ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .homepage-21 li {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+  }
+
+/*.events-container {
+    display: flex;
+    justify-content: flex-end; 
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+ 
+  .image-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 400px; 
+    height: auto;
+  }
+  
+
+  .slider-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .slider-btn {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .slider-btn.left {
+    left: -40px;
+  }
+  
+  .slider-btn.right {
+    right: -40px;
+  }
+  
+  .slider-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }*/
+
+  /* Events Section (Image Slider) */
+.events-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns slider to the right */
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Image Slider */
+  .image-slider {
+    position: relative;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  /* Image Styling */
+  .slider-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  opacity: 1!important;  /* Ensure image is visible */
+  display: block !important;
+  transition: opacity 1s ease-in-out;
+  }
+  
+  .slider-image.active {
+    opacity: 1;
+  }
+  
+  /* Slider Buttons */
+  .slider-btn {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .slider-btn.left {
+    left: 10px;
+  }
+  
+  .slider-btn.right {
+    right: 10px;
+  }
+  
+  .slider-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
