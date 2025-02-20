@@ -75,6 +75,8 @@
     background-size:cover;
     text-align: center;
     transition: transform 0.5s ease-in-out;
+    justify-content:flex-end;
+    padding: 100px;
 }
 
 .homepage-3 {
@@ -132,6 +134,7 @@
     border-bottom: 1px solid gray;
   }
 
+
 /*.events-container {
     display: flex;
     justify-content: flex-end; 
@@ -139,73 +142,19 @@
     margin: auto;
     padding: 20px;
   }
-  
- 
-  .image-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    max-width: 400px; 
-    height: auto;
-  }
-  
 
-  .slider-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-
-  .slider-btn {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  
-  .slider-btn.left {
-    left: -40px;
-  }
-  
-  .slider-btn.right {
-    right: -40px;
-  }
-  
-  .slider-btn:hover {
-    background: rgba(0, 0, 0, 0.8);
-  }*/
-
-  /* Events Section (Image Slider) */
-.events-container {
-    display: flex;
-    justify-content: flex-end; /* Aligns slider to the right */
-    width: 90%;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  /* Image Slider */
   .image-slider {
     position: relative;
     max-width: 400px;
     height: auto;
   }
   
-  /* Image Styling */
   .slider-image {
   width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-  opacity: 1!important;  /* Ensure image is visible */
+  opacity: 1!important; 
   display: block !important;
   transition: opacity 1s ease-in-out;
   }
@@ -214,7 +163,6 @@
     opacity: 1;
   }
   
-  /* Slider Buttons */
   .slider-btn {
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
@@ -239,5 +187,58 @@
   
   .slider-btn:hover {
     background: rgba(0, 0, 0, 0.8);
+  }*/
+
+  .slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Adjust width as needed */
+    margin: auto;
+    overflow: hidden;
+    margin-left: auto;
+    display: flex;
   }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Left Arrow */
+  .slider-arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 10px;  /* Move to the left */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  /* Right Arrow */
+  .slider-arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 10px;  /* Move to the right */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  /* Hover Effect */
+  .slider-arrow-left:hover,
+  .slider-arrow-right:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
   
