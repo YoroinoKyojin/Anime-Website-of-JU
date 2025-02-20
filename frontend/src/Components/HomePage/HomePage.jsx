@@ -73,10 +73,10 @@ export const HomePage = ({ props, ref }) => {
         <div className="events-container">
           {/* Event List */}
           {/* Image Slider */}
-          <div className="image-slider">
-            <button className="prev-btn" onClick={prevImage}>❮</button>
+          <div className="slider-container">
+            <button className="slider-arrow-left" onClick={prevImage}>❮</button>
             <img src={images[currentImage]} alt="Event" className="slider-image" />
-            <button className="next-btn" onClick={nextImage}>❯</button>
+            <button className="slider-arrow-right" onClick={nextImage}>❯</button>
           </div>
         </div>
       </div>
