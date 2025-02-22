@@ -1,0 +1,54 @@
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between the cards */
+    padding: 50px;
+  }
+  .category-wrapper {
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    padding: 20px; /* Adjust padding to control spacing */
+    border-radius: 10px; /* Rounded edges */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content; /* Adjusts width based on content */
+    margin: auto; /* Centers the box */
+}
+
+  .category-card {
+    position: relative;
+    width: 25%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+    border: 2px solid transparent; /* Initially no border */
+    padding: 10px; /* Padding between border and content */
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+    border: 2px solid white; /* White border appears on hover */
+    padding: 8px; /* Reduce padding slightly to maintain spacing */
+  }
+  
+  .category-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .category-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    transition: text-shadow 0.3s ease-in-out;
+  }
+  
+  .category-card:hover .category-overlay {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing effect */
+  }
+  
